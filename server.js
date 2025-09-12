@@ -15,4 +15,4 @@ const kg = Math.round(lbs * 0.45359237 * 1000) / 1000;
 return res.json({ lbs, kg, formula: 'kg = lbs * 0.45359237' });
 });
 const port = process.env.PORT || 8080;
-app.listen(port, '0.0.0.0', () => console.log(`listening on ${port}`));
+app.listen(port, () => console.log(`listening on ${port}`));
