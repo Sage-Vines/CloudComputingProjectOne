@@ -17,7 +17,14 @@ This project implements a simple REST web service that converts weight from poun
 - Node.js w/ Express was chosen for its quick and easy setup. It also allowed for REST endpoints to be built with minimal overhead.
 - Systemd was chosen to keep the sustem running even after it reboots and to automatically start in failure.
 - Morgan middleware was added to make the log requests more structured.
-- Error Handling: 
+
+
+- Error Handling:
+    - 400 for a bad request is returned if the lbs parameter is missing or the lbs parameter is not a number.
+    - 422 for an unprocessable entity is returned if the lbs parameter is negative or not finite.
+
+
+
 
 **4. Testing Approach** <br>
 
