@@ -24,10 +24,20 @@ This project implements a simple REST web service that converts weight from poun
     - 422 for an unprocessable entity is returned if the lbs parameter is negative or not finite.
 
 
-
-
 **4. Testing Approach** <br>
+- Rest API functionality testing involves using curl commands to test valid and invalid inputs.
+    - /convert?lbs=0 --> 0.000 kg
+    - /convert?lbs=150 --> 68.039 kg
+    - /convert?lbs=0.1 --> 0.045 kg
+    - /convert?(no parameter) --> 400 Error
+    - /convert?lbs=-5 --> 422 Error
+    - /convert?lbs=NaN --> 400 Error
 
 
 **5. Cost & Cleanup** <br>
+- T3.micro instance used in order to minimize cost
+- Service is disabled at the end of project 
+- SSH terminals close at the end of project
+- AMI terminated at the end of project
+- EBS volumes deleted at the end of project
 
