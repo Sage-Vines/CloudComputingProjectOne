@@ -1,8 +1,8 @@
 # CloudComputingProjectOne
 This project aims to deploy a small REST web service on Amazon AWS which will convert pounds/lbs to kilograms/kg.
 
--Amazon Machine Image (AMI) Choice: Amazon Linux 2023 kernel-6.12 AMI (Amazon Linux 2 is not under free tier)
--Instance Type: t3.micro (free tier eligible)
+*Amazon Machine Image (AMI) Choice: Amazon Linux 2023 kernel-6.12 AMI (Amazon Linux 2 is not under free tier)
+*Instance Type: t3.micro (free tier eligible)
 -Key Pair: ScarlettKey.pem
 -VPC: vpc-0d1f953bf87d6fdce (default)
 -Security Group: Custom Security Group - SageSecurityOne w/ Two Rules
